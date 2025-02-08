@@ -1,0 +1,26 @@
+<h2>Dashboard</h2>
+
+<!-- Table to display fetched data -->
+<table border="1">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>User ID</th>
+      <th>Product Name</th>
+      <th>Quantity</th>
+      <th>Price</th>
+      <th>Order Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Use *ngFor to loop through the data and display each row -->
+    <tr *ngFor="let item of data">
+      <td>{{ item.id }}</td>
+      <td>{{ item.user_id }}</td>
+      <td>{{ item.product_name }}</td>
+      <td>{{ item.quantity }}</td>
+      <td>{{ item.price }}</td>
+      <td>{{ item.order_date  }}</td> <!-- Format the order_date -->
+    </tr>
+  </tbody>
+</table>
